@@ -7,12 +7,12 @@ namespace MyAbp.EntityFrameworkCore
     {
         public static void Configure(DbContextOptionsBuilder<MyAbpDbContext> builder, string connectionString)
         {
-            builder.UseSqlServer(connectionString);
+            builder.UseMySql(connectionString);
         }
 
         public static void Configure(DbContextOptionsBuilder<MyAbpDbContext> builder, DbConnection connection)
         {
-            builder.UseSqlServer(connection);
+            builder.UseMySql(connection);
         }
     }
 }
